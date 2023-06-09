@@ -477,15 +477,15 @@
 				document.write(nowTime);
 			</script>
 		</div>
-        <!-- 服务器状态检测代码开始 -->
+		            <!-- 服务器状态检测代码开始 -->
         <div class="server-status">
             当前服务器状态： <span class="server-online"></span>!
         </div>
 
         <script src="/src/js/minecraft.min.js"></script>
         <script>
-            MinecraftAPI.getServerStatus('play.xinghecity.xyz', {
-                port: 37023
+            MinecraftAPI.getServerStatus('play.superboom.vip', {
+                port: 11451
             }, function (err, status) {
                 if (err) {
                     return document.querySelector('.server-status').innerHTML = '状态加载失败';
